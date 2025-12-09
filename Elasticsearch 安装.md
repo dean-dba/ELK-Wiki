@@ -79,7 +79,7 @@ node.name: elk-1
 xpack.security.enabled: false
 ```
 
-设置 JVM配置
+设置 JVM配置(jvm.options文件)
 ```
 # 调整JVM大小
 -Xms4g

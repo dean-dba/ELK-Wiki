@@ -15,6 +15,7 @@
 - **JVM Xms、Xmx值应相同，否则大小调整时会出现停顿**
 - **OpenJDK分为客户端JVM和服务端JVM，Elasticsearch默认使用"server JVM"启动**
 - **操作系统防火墙如打开，可将端口放开**
+- **Elasticsearch默认开启安全验证**
 
 ## 开始正文
 

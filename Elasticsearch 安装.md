@@ -14,7 +14,7 @@
 - **Elasticsearch默认使用G1GC并行收集器，早期版本使用CMS并行收集器**
 - **JVM Xms、Xmx值应相同，否则大小调整时会出现停顿**
 - **OpenJDK分为客户端JVM和服务端JVM，Elasticsearch默认使用"server JVM"启动**
-- ****
+- **操作系统防火墙如打开，可将端口放开**
 
 ## 开始正文
 
@@ -86,7 +86,15 @@ xpack.security.enabled: false
 -Xmx4g
 ```
 
+后台启动
+```
+elasticsearch -d
+```
 
+确认是否正常
+```
+http://192.168.1.30:9200
+```
 
 ##### 至此，Elasticsearch单机版安装就介绍完成了，请开始你的表演吧！
 

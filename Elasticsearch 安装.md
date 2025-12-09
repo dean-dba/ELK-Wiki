@@ -10,6 +10,11 @@
 - **Elasticsearch 7以上内置OpenJDK**
 - **Elasticsearch与其它组件版本须完全一致**
 - **Elasticsearch访问端口9200，内部通信端口9300**
+- **Elasticsearch不支持使用root启动**
+- **Elasticsearch默认使用G1GC并行收集器，早期版本使用CMS并行收集器**
+- **JVM Xms、Xmx值应相同，否则大小调整时会出现停顿**
+- **OpenJDK分为客户端JVM和服务端JVM，Elasticsearch默认使用"server JVM"启动**
+- ****
 
 ## 开始正文
 
@@ -30,6 +35,9 @@ echo "net.ipv4.tcp_retries2=5" >> /etc/sysctl.conf
 echo "vm.swappiness=1" >> /etc/sysctl.conf
 # mmapfs 文件系统数
 echo "vm.max_map_count=262144" >> /etc/sysctl.conf
+
+# 重启系统
+reboot
 
 创建ES用户、密码
 useradd elk

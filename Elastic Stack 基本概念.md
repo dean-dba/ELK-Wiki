@@ -7,7 +7,7 @@
 - **Kibana：仪表盘、可视化和管理工具的可视化界面**
 - **Logstash：数据摄取和转换引擎，通常用于更复杂的 ETL（提取、转换、加载）管道**
 - **Elastic Agent：一个轻量级的数据传输器，用于收集数据并将其转发到 Elasticsearch，现已替代Beats**
-- **Beats：开源数据发送器，您可以将其作为代理安装在服务器上，主要有Filebeat、Metricbeat、Auditbeat、Heartbeat、Packetbeat、Winlogbeat**
+- **Beats：Elastic Agent没有出来之前的主流数据传输器，主要有Filebeat、Metricbeat、Auditbeat、Heartbeat、Packetbeat、Winlogbeat**
 - **APM(应用性能监控)：它能够实时监控软件服务和应用程序，收集关于传入请求、数据库查询、缓存调用、外部 HTTP 请求等的详细性能信息，从而帮助您快速定位并修复性能问题**
 - **Elasticsearch Hadoop：它是一个与Hadoop、Elasticsearch之间进行数据交互的一种工具**
 

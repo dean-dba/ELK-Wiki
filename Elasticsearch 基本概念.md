@@ -26,12 +26,14 @@
 
 #### _id生成方式：uuid base64后，共计20位
 
+#### Elasticsearch 基本定义
 - **text：可以全文检索，分词字段必须，keyword：聚合、排序、精准匹配**
 - **fielddata：text数据类型中早期版本执行聚合、排序、脚本时的解决方案，现已弃用，但仍保留在ES中，默认禁用**
 - **_source：存储原始JSON文档数据，默认开启**
 - **store：针对字段数据是否存储，通常在_source定义为false时使用**
 - **null_value：将null值替换成指定的值**
 
+#### Elasticsearch 分词器
 - **分词器类型：中文分词器、英文分词器，主流分词器：IK 分词、HanLP 分词**
 - **分词器工作原理：将什么字符过滤掉 char_filter[html_strip]->基本什么文本切分分词 tokenizer["ambiguity" "synonym" ]->分词后再过滤 filter["lowercase"]**
 - **分词使用原则：索引时细粒度["analyzer": "ik_max_word"]，搜索时粗粒度["search_analyzer": "ik_smart"]，提高召回率**
@@ -43,6 +45,7 @@
 
 #### ETL：抽取(extract)、转换(transform)、加载(load)
 
+#### ingest 预处理管道
 - **ingest工作流程：1、创建预处理管道  2、写入任务关联预处理管道  3、写入数据**
 - **ingest类型：数据美化(append、enrich)、数据转换(convert、lowercase、trim)、数据过滤(drop、remove)、流水线处理(fail、reroute)、数据和JSON处理(json、sort)**
 - **创建预处理管道："PUT _ingest/pipeline/ingest_bbt {"processors":[{"append":{"field":"currency","value":["aaa"]}}]}"**

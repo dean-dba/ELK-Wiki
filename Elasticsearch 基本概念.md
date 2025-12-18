@@ -49,3 +49,9 @@
 #### 创建预处理管道："PUT _ingest/pipeline/ingest_bbt {"processors":[{"append":{"field":"currency","value":["aaa"]}}]}"
 #### 使用预处理管道："PUT test/_doc/1?pipeline=ingest_name"
 #### 预处理管道应用范围：创建索引、创建模板、迁移索引、更新索引、写入索引、CCR
+
+##### 至此，Elasticsearch 基本概念就介绍完成了，请开始你的表演吧！
+
+&nbsp;
+
+**有兴趣的小伙伴，可加联系方式：Vx：+86 183 1026 3857&nbsp;&nbsp;&nbsp;&nbsp;Telegram：+86 189 1127 2119**  

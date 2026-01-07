@@ -45,7 +45,7 @@
 
 #### Elasticsearch 节点角色类型
 - **master：候选主节点，简称：m，作用：可以被选为主节点的节点**
-- **data(保留了向后兼容，等同于：data_content + data_hot + data_warm + data_cold + data_froz：数据节点，简称：d，作用：保存数据并执行CRUD、搜索、聚合的节点**
+- **data(保留角色，为了向后兼容，等同于：data_content + data_hot + data_warm + data_cold + data_froz：数据节点，简称：d，作用：保存数据并执行CRUD、搜索、聚合的节点**
 - **data_content：内容数据节点，简称：s，作用：负责存储、搜索的数据节点**
 - **data_hot：热数据节点，简称：h，作用：最近、最常访问的数据节点，此节点必须与data_content角色一起使用**
 - **data_warm：温数据节点，简称：w，作用：访问频次低、很少更新数据节点，此节点必须与data_content角色一起使用**

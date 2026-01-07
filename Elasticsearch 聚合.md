@@ -1,4 +1,4 @@
-# Elasticsearch-聚合
+# Elasticsearch 聚合
 
 #### 通过Elasticsearch提供的聚合函数可以轻松实现数据分析、数据挖掘的目的，主要应用于用户行为分析、电商分析、日志分析等场景，功能强大且灵活高效
 
@@ -126,7 +126,7 @@ POST test_200/_search
 
 #### 去重显示：聚合函数+top_hits+size：基于评分显示、collapse+inner_hits+collapse：性能优于top_hits
 
-##### 至此，Elasticsearch-聚合就介绍完成了，请开始你的表演吧！
+##### 至此，Elasticsearch 聚合就介绍完成了，请开始你的表演吧！
 
 &nbsp;
 

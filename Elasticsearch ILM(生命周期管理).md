@@ -25,12 +25,11 @@ POST test-400/_rollover
 ```
 
 shrink(压缩索引)前提条件：
-```
 索引只读："index.blocks.write":true
 索引副本设置为0："index.number_of_replicas":0
 所有主分片必须在同一节点："index.routing.allocation.include._tier_preference":"data_hot"
 目标分片数必须是原分片数的约数(例如，源分片8个可以压缩为4、2、1个)
-
+```
 PUT test-400-20260107/_settings
 {
   "settings": {

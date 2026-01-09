@@ -2,6 +2,9 @@
 
 #### Elasticsearch ILM功能是从6.6版本引入，并在6.7版本正式推出的原生索引生命周期管理功能，解决了之前需要程序处理所带来的各种繁琐问题
 
+&nbsp;
+![ILM 流程图](images/ILM概念.png)
+
 标准3节点集群配置方案，ILM(索引生命周期管理)基于data_hot、data_warm、data_cold节点创建
 ```
 节点1: node.roles: [data_content, data_hot, master, ingest]
